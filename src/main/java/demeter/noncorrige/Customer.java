@@ -5,7 +5,7 @@ public class Customer {
 	private Wallet wallet;
 
 	public Customer() {
-
+		
 	}
 
 	public Customer(Wallet wallet) {
