@@ -14,16 +14,16 @@ public class Zoo {
 	
 	public void addAnimal(String nomAnimal, String typeAnimal, String comportement){
 		if (typeAnimal.equals("MAMMIFERE") && comportement.equals("CARNIVORE")){
-			zoneCarnivore.addAnimal(typeAnimal, nomAnimal, comportement);
+			zoneCarnivore.addAnimal(new Animal(typeAnimal, nomAnimal, comportement));
 		}
 		else if (typeAnimal.equals("MAMMIFERE") && comportement.equals("HERBIVORE")){
-			savaneAfricaine.addAnimal(typeAnimal, nomAnimal, comportement);
+			savaneAfricaine.addAnimal(new Animal(typeAnimal, nomAnimal, comportement));
 		}
 		else if (typeAnimal.equals("REPTILE")){
-			fermeReptile.addAnimal(typeAnimal, nomAnimal, comportement);
+			fermeReptile.addAnimal(new Animal(typeAnimal, nomAnimal, comportement));
 		}
 		else if (typeAnimal.equals("POISSON")){
-			aquarium.addAnimal(typeAnimal, nomAnimal, comportement);
+			aquarium.addAnimal(new Animal(typeAnimal, nomAnimal, comportement));
 		}
 	}
 	
